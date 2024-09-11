@@ -67,3 +67,16 @@
 	font-weight: 700;
 	font-style: italic;
 }
+
+.scrollbar-none {
+	-ms-overflow-style: none;
+	scrollbar-width: none;
+}
+
+body {
+	cursor: url('assets/cursors/default.svg'), auto;
+}
+
+.hover\:cursor-pointer {
+	cursor: url('assets/cursors/default.svg'), pointer !important;
+}
