@@ -75,7 +75,7 @@ function Sidebar() {
         <>
             <div className='flex flex-col justify-center items-center my-12 border-r-4 border-black'>
                 <div className='mb-8'>
-                    <Link to={`home`} className='font-bold'>
+                    <Link to={`home`} className='font-bold hover:cursor-custom'>
                         <img width={200} src={portfolioImage} alt="Portfolio" />
                     </Link>
                 </div>
@@ -85,7 +85,7 @@ function Sidebar() {
                             return (
                                 <Link
                                     key={index}
-                                    className={`p-1 w-48 text-center mb-4 hover:cursor-pointer uppercase font-semibold ${location.pathname.includes(item.url) ? 'bg-orange-300' : 'bg-transparent'}`}
+                                    className={`p-1 w-48 text-center mb-4 hover:cursor-custom uppercase font-semibold ${location.pathname.includes(item.url) ? 'bg-orange-300' : 'bg-transparent'}`}
                                     to={item.url}>{item.name}</Link>
                             )
                         })
@@ -95,7 +95,7 @@ function Sidebar() {
                     {
                         socialLinks.map((item, index) => {
                             return (
-                                <a key={index} href={item.url} target='_blank' className='w-10 h-10 border-2 border-black flex items-center justify-center'>
+                                <a key={index} href={item.url} target='_blank' className='hover:cursor-custom w-10 h-10 border-2 border-black flex items-center justify-center'>
                                     <FontAwesomeIcon icon={item.icon} size='lg' />
                                 </a>
                             )

@@ -73,10 +73,10 @@
 	scrollbar-width: none;
 }
 
-body {
+.cursor-custom {
 	cursor: url('assets/cursors/default.svg'), auto;
 }
 
-.hover\:cursor-pointer {
+.hover\:cursor-custom {
 	cursor: url('assets/cursors/default.svg'), pointer !important;
 }
