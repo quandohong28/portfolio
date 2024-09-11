@@ -18,6 +18,7 @@ import Education from './components/pages/Education.jsx'
 import Certifications from './components/pages/Certifications.jsx'
 
 
+
 const router = createBrowserRouter([
 	{
 		path: '/',
@@ -63,6 +64,10 @@ const router = createBrowserRouter([
 		],
 	},
 ])
+
+document.addEventListener('contextmenu', function (event) {
+	event.preventDefault();
+});
 
 createRoot(document.getElementById('root')).render(
 	<StrictMode>
