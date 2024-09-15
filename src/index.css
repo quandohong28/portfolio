@@ -2,12 +2,6 @@
 @tailwind components;
 @tailwind utilities;
 
-.my-soul-regular {
-	font-family: "My Soul", cursive;
-	font-weight: 400;
-	font-style: normal;
-}
-
 .kulim-park-extralight {
 	font-family: "Kulim Park", sans-serif;
 	font-weight: 200;
@@ -68,15 +62,17 @@
 	font-style: italic;
 }
 
+* {
+    cursor: url('assets/cursors/default.svg'), auto !important;
+}
+
 .scrollbar-none {
 	-ms-overflow-style: none;
 	scrollbar-width: none;
 }
 
-.cursor-custom {
-	cursor: url('assets/cursors/default.svg'), auto;
-}
-
-.hover\:cursor-custom {
-	cursor: url('assets/cursors/default.svg'), pointer !important;
+.my-soul-regular {
+	font-family: "My Soul", cursive;
+	font-weight: 400;
+	font-style: normal;
 }

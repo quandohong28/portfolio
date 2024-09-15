@@ -2,7 +2,11 @@ import React from 'react'
 
 function Certifications() {
   return (
-    <div>Certifications</div>
+    <>
+      <div class="h-[540px] overflow-y-auto p-10 scrollbar-none">
+
+      </div>
+    </>
   )
 }
 
