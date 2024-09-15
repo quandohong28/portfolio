@@ -85,7 +85,7 @@ function Sidebar() {
                             return (
                                 <Link
                                     key={index}
-                                    className={`p-1 w-48 text-center mb-4 uppercase font-semibold ${location.pathname.includes(item.url) ? 'bg-orange-300' : 'bg-transparent'}`}
+                                    className={`p-1 w-48 text-center mb-4 uppercase font-semibold ${location.pathname.includes(item.url) ? 'bg-orange-200' : 'bg-transparent'}`}
                                     to={item.url}>{item.name}</Link>
                             )
                         })
