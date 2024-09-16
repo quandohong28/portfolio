@@ -8,11 +8,11 @@ export default function Root() {
         <>
             <div className='my-12 mx-24 font-light'>
                 <div className="grid grid-cols-12">
-                    <div className='col-span-4'>
+                    <div className='col-span-12 lg:col-span-4'>
                         <Sidebar />
                     </div>
-                    <div className="col-span-8">
-                        <div className='m-12'>
+                    <div className="col-span-12 lg:col-span-8">
+                        <div className='lg:m-12'>
                             <Outlet />
                         </div>
                     </div>
