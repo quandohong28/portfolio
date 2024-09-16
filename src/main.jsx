@@ -1,7 +1,7 @@
 import { StrictMode } from 'react'
 import { createRoot } from 'react-dom/client'
 import {
-	createBrowserRouter,
+	createHashRouter,
 	Navigate,
 	RouterProvider,
 } from 'react-router-dom'
@@ -9,22 +9,22 @@ import Bio from './components/pages/Bio.jsx'
 import Certifications from './components/pages/Certifications.jsx'
 import Education from './components/pages/Education.jsx'
 import Experiences from './components/pages/Experiences.jsx'
+import ForeignLanguages from './components/pages/ForeignLanguages.jsx'
 import Home from './components/pages/Home.jsx'
 import Projects from './components/pages/Projects.jsx'
-import ForeignLanguages from './components/pages/ForeignLanguages.jsx'
 import Skills from './components/pages/Skills.jsx'
 import ErrorPage from './components/routes/ErrorPage.jsx'
 import Root from './components/routes/Root.jsx'
 import './index.css'
 
-const router = createBrowserRouter([
+const router = createHashRouter([
 	{
 		path: '/',
 		element: <Root />,
 		errorElement: <ErrorPage />,
 		children: [
 			{
-				path: '',
+				index: true,
 				element: <Navigate to='home' />,
 			},
 			{
