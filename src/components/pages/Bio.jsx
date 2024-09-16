@@ -5,6 +5,8 @@ function Bio() {
 		name: 'Do Hong Quan',
 		age: 23,
 		gender: 'Male',
+		health: 'Good',
+		marital: 'Single',
 		location: 'Minh Khai, Bac Tu Liem, Hanoi',
 		tel: '0362303364',
 		mail: 'quandohong28@gmail.com',
@@ -13,32 +15,44 @@ function Bio() {
 
 	return (
 		<>
-			<div class="h-[540px] overflow-y-auto p-10 scrollbar-none">
-				<ul className='flex flex-col gap-4'>
-					<li className='flex flex-col'>
+			<div class="h-[540px] overflow-y-auto lg:p-10 scrollbar-none">
+				<div className='grid grid-cols-2 gap-4 mb-8'>
+					<div className='flex flex-col'>
 						<span>{bio.name}</span>
 						<span className='text-sm text-gray-400'>Full name</span>
-					</li>
-					<li className='flex flex-col'>
+					</div>
+					<div className='flex flex-col'>
 						<span>{bio.age}</span>
 						<span className='text-sm text-gray-400'>Age</span>
-					</li>
-					<li className='flex flex-col'>
+					</div>
+					<div className='flex flex-col'>
+						<span>{bio.gender}</span>
+						<span className='text-sm text-gray-400'>Gender</span>
+					</div>
+					<div className='flex flex-col'>
+						<span>{bio.health}</span>
+						<span className='text-sm text-gray-400'>Health status</span>
+					</div>
+					<div className='flex flex-col'>
+						<span>{bio.marital}</span>
+						<span className='text-sm text-gray-400'>Marital</span>
+					</div>
+					<div className='flex flex-col'>
 						<span>{bio.location}</span>
 						<span className='text-sm text-gray-400'>Location</span>
-					</li>
-					<li className='flex flex-col'>
+					</div>
+					<div className='flex flex-col'>
 						<span>{bio.tel}</span>
 						<span className='text-sm text-gray-400'>Tel</span>
-					</li>
-					<li className='flex flex-col'>
+					</div>
+					<div className='flex flex-col'>
 						<span>{bio.mail}</span>
 						<span className='text-sm text-gray-400'>Mail</span>
-					</li>
-					<li className='flex flex-col'>
-						<span>{bio.description}</span>
-					</li>
-				</ul>
+					</div>
+				</div>
+				<div className='flex flex-col'>
+					<span>{bio.description}</span>
+				</div>
 			</div>
 		</>
 	)
