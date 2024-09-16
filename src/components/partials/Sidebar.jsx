@@ -30,8 +30,8 @@ function Sidebar() {
             url: 'experiences',
         },
         {
-            name: 'Rewards',
-            url: 'rewards',
+            name: 'Foreign Languages',
+            url: 'foreign-languages',
         },
         {
             name: 'Education',
@@ -73,9 +73,9 @@ function Sidebar() {
 
     return (
         <>
-            <div className='flex flex-col justify-center items-center my-12 border-r-4 border-black'>
+            <div className='flex flex-col justify-center items-center my-12 border-0 lg:border-r-4 lg:border-black'>
                 <div className='mb-8'>
-                    <Link to={`home`} className='font-bold'>
+                    <Link to={`home`} className='font-semibold'>
                         <img width={200} src={portfolioImage} alt="Portfolio" />
                     </Link>
                 </div>

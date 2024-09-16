@@ -1,6 +1,6 @@
 import React from 'react'
 
-function Certifications() {
+function ForeignLanguages() {
   return (
     <>
       <div class="h-[540px] overflow-y-auto lg:p-10 scrollbar-none">
@@ -10,4 +10,4 @@ function Certifications() {
   )
 }
 
-export default Certifications
+export default ForeignLanguages

@@ -11,7 +11,7 @@ import Education from './components/pages/Education.jsx'
 import Experiences from './components/pages/Experiences.jsx'
 import Home from './components/pages/Home.jsx'
 import Projects from './components/pages/Projects.jsx'
-import Rewards from './components/pages/Rewards.jsx'
+import ForeignLanguages from './components/pages/ForeignLanguages.jsx'
 import Skills from './components/pages/Skills.jsx'
 import ErrorPage from './components/routes/ErrorPage.jsx'
 import Root from './components/routes/Root.jsx'
@@ -48,8 +48,8 @@ const router = createBrowserRouter([
 				element: <Experiences />,
 			},
 			{
-				path: 'rewards',
-				element: <Rewards />,
+				path: 'foreign-languages',
+				element: <ForeignLanguages />,
 			},
 			{
 				path: 'education',

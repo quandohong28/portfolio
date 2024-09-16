@@ -43,12 +43,12 @@ function Skills() {
 
     return (
         <>
-            <div class="h-[540px] overflow-y-auto p-10 scrollbar-none">
+            <div class="h-[540px] overflow-y-auto lg:p-10 scrollbar-none">
                 <div className='grid grid-cols-2 gap-12'>
                     {keys.map((key, index) => {
                         return (
                             <div key={index}>
-                                <h1 className='uppercase font-bold mb-2'>{key}</h1>
+                                <h1 className='uppercase font-semibold mb-2'>{key}</h1>
                                 <ul>
                                     {skills[key].map((skill, index) => {
                                         return (

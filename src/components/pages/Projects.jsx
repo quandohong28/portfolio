@@ -25,12 +25,12 @@ function Projects() {
 
 	return (
 		<>
-			<div class="h-[540px] overflow-y-auto p-10 scrollbar-none">
+			<div class="h-[540px] overflow-y-auto lg:p-10 scrollbar-none">
 				{projects.map((project, index) => {
 					return (
 						<div className='mb-12'>
 							<div className='flex items-center gap-4 mb-4'>
-								<p className='uppercase font-bold '>{project.title}</p>
+								<p className='uppercase font-semibold '>{project.title}</p>
 								<span class="bg-orange-200 text-gray-800 text-xs font-medium me-2 px-2.5 py-0.5 rounded dark:bg-gray-700 dark:text-gray-300">{project.type}</span>
 							</div>
 							<div className="flex gap-4">
